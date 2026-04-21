@@ -1,15 +1,6 @@
-import ListItem from "./listItem"
-
-const AnswersList = () => {
+const AnswersList = ({ children }) => {
   return (
-    <ul>
-      <ListItem />
-      <ListItem />
-      <ListItem />
-      <ListItem />
-      <ListItem />
-      <ListItem />
-    </ul>
+    <ol className="space-y-4 text-body list-decimal list-inside">{children}</ol>
   )
 }
 
